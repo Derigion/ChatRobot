@@ -5,6 +5,7 @@ import { msgs, addBotMsg } from "./message.js";
 let openAi: OpenAIApi;
 
 export const initBot = () => {
+  console.log(colors.yellow("================欢迎使用chatRobot================"))
   openAi = new OpenAIApi(
     new Configuration({
       basePath: "https://api.chatanywhere.com.cn/v1",

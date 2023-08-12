@@ -1,9 +1,10 @@
 {
-  "name": "chatRobot",
+  "name": "chat-robot",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
+  "bin": "./dist/bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rollup -c rollup.config.js && node dist/bot.js",
@@ -20,6 +21,7 @@
     "ora": "^7.0.1",
     "readline-sync": "^1.4.10",
     "rollup": "^3.28.0",
+    "rollup-plugin-add-shebang": "^0.3.1",
     "tslib": "^2.6.1"
   },
   "devDependencies": {

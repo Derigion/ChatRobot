@@ -10,7 +10,7 @@
 $ pnpm install
 ```
 
-在根目录下新建.env文件，添加如下环境变量，xxxxxxxxxxxxxx为你的openai的api_key。
+在根目录下新建.env文件，添加如下环境变量，xxxxxxxxxxxxxx为你的openai的api_key
 
 ```javascript
 // .env
@@ -28,11 +28,21 @@ openAi = new OpenAIApi(
   );
 ```
 
-启动机器人
+打包构建
 
 ```
-$ pnpm start
+$ pnpm build
 ```
+
+为了能全局使用，使用pnpm link到全局
+
+```
+$ pnpm link --global
+```
+
+打开终端输入chat-robot，即可开始对话
+
+![start](assets/start.jpg)
 
 ### 使用示例
 
