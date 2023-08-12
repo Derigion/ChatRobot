@@ -1,0 +1,29 @@
+{
+  "name": "chatRobot",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rollup -c rollup.config.js && node dist/bot.js",
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.4.10",
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "openai": "^3.3.0",
+    "ora": "^7.0.1",
+    "readline-sync": "^1.4.10",
+    "rollup": "^3.28.0",
+    "tslib": "^2.6.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/readline-sync": "^1.4.4"
+  }
+}
